@@ -1,0 +1,26 @@
+{
+  "name": "test-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/*.html --open",
+    "prestart": "rimraf dist",
+    "build": "parcel build src/*.html --dist-dir build",
+    "prebuild": "rimraf build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "autoprefixer": "^10.3.4",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1"
+  }
+}
