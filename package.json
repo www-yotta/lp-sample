@@ -6,7 +6,7 @@
     "start": "parcel src/*.html --open",
     "prestart": "rimraf dist",
     "build": "parcel build src/*.html --dist-dir build",
-    "build:static": "parcel build src/*.html --dist-dir build --public-url ./",
+    "build:static": "rimraf build & parcel build src/*.html --dist-dir build --public-url ./",
     "prebuild": "rimraf build"
   },
   "keywords": [],
